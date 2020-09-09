@@ -26,7 +26,7 @@
   document.querySelector('body').addEventListener('wheel', function(){
     start = !start;
     runSketch = !runSketch;
-    $('.instructions').delay(8000).animate({
+    $('.instructions').delay(9000).animate({
       opacity: 0
     }, 2000);
   })
@@ -64,7 +64,7 @@
     }
 
     // only starts running the loop if a camera feed is loaded, and after 300 frames following scrolling down to view the sketch
-    if(capture.pixels.length == (w*h*4) && runSketch && frameCount - currFrame > 690) {
+    if(capture.pixels.length == (w*h*4) && runSketch && frameCount - currFrame > 630) {
     
       for (let i = 0; i < particles.length; i++) {
         let p = particles[i];

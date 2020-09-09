@@ -16,3 +16,16 @@
   margin-bottom: 50px;
   
 }
+
+.safari-warning-text {
+  text-align: center !important;
+  color: #020202 !important;
+}
+
+.desktop-ff-ch {
+  text-align: center;
+}
+
+.browser-check {
+  background-color:#fdfdfd !important;
+}
