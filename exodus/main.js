@@ -2,9 +2,7 @@ $(document).ready(function(){
 
 
   $('.begin').on('click', function(){
-    
     openPopout();
-
   })
 
 function openPopout(){
@@ -13,11 +11,10 @@ function openPopout(){
   console.log(p);
   let w = p.width();
   let h = p.height();
-  console.log(p[0].offsetTop);
-  console.log(p[0].offsetLeft);
-  console.log(w);
-  console.log(h);
-
+  // console.log(p[0].offsetTop);
+  // console.log(p[0].offsetLeft);
+  // console.log(w);
+  // console.log(h);
 
   let url = "exodus_build";
 
@@ -39,7 +36,12 @@ $('.preview-vid').mouseover(function(){
   $('.vid')[0].pause();
 })
 
-
-
+$('.close').on('click', function(){
+  $('.browser-check').animate({
+    opacity: 0
+  }, 1000, function(){
+    $('.browser-check').hide();
+  })
+})
 
 });

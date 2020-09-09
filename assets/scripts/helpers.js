@@ -78,10 +78,6 @@ $(document).ready(function(){
 
         $('.info-toggled').fadeToggle("slow");
 
-        // if(jQuery.browser.mobile) {
-        //     $('.main-content').css('overflow-y', 'hidden');
-        // }
-
         if(displayToggle) {
             $(".sidebar").animate({
                 left: 0

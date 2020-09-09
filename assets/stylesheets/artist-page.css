@@ -270,7 +270,6 @@ and (-webkit-min-device-pixel-ratio: 2) {
   .header-titles {
     width: min(103%, 800px);
   }
-
 }
 
 /************* HELPERS ************/
