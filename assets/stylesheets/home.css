@@ -397,4 +397,28 @@ and (-webkit-min-device-pixel-ratio: 2) {
         font-size: clamp(11px, 2vw, 16px);
         padding: 10px;
     }
+
+    .fa-angle-down {
+        /* text-align: right;
+        margin: 30px auto;
+        
+        color: var(--white-dark-alpha);
+        transition: color 0.5s;
+        line-height: unset;
+        width: 90%; */
+        font-size: clamp(32px, 10vw, 50px);
+        opacity: 0;
+        position: static;
+        margin-top: -90px;
+        margin-right: 20px;
+      }
+
+      .titles {
+          height: unset;
+      }
+
+      .header-titles {
+          /* height: max-content; */
+          overflow-y: visible;
+      }
 }
