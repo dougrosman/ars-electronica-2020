@@ -1,0 +1,16 @@
+.vid-container {
+  display: none;
+  width: 100%;
+  background-color: #020202;
+  justify-content: space-evenly;
+  opacity: 0;
+}
+
+.vid {
+  width: 49%;
+}
+
+.wrapper {
+  overflow-y: hidden;
+  background-color: #020202;
+}

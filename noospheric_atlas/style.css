@@ -1,0 +1,82 @@
+.jason-site {
+  width: 100%;
+  height: 90vh;
+  display: none;
+}
+
+/* .popout{
+  position: relative;
+} */
+
+.firefox-mobile-only {
+  display: none;
+}
+
+.popout {
+  width: max-content;
+  height: max-content;
+  position: relative;
+}
+
+.preview-image {
+  width: min(90vw, 1460px);
+  max-height: 100vh;
+}
+
+.popout-overlay {
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-light);
+  color: var(--white-dark);
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+.popout-overlay > p {
+  margin: 10px auto;
+}
+
+.popout-overlay:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 800px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  .popout-overlay {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background-color: var(--black-light);
+    color: var(--white-dark);
+    opacity: 0.8;
+    transition: unset;
+    font-size: 14px;
+  }
+  
+  .popout-overlay:hover {
+    opacity: unset;
+    cursor: pointer;
+  }
+
+  .popout-overlay > p {
+    margin: 0 auto;
+  }
+
+}

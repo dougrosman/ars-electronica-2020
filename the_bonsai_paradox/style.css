@@ -1,0 +1,28 @@
+
+.vid {
+  width: clamp(1px, 100vw, 1280px);
+  height: clamp(1px, 56.25vw, 720px);
+  margin-bottom: clamp(400px, 50vh, 800px);
+}
+
+#vid360 {
+  width: clamp(1px, 100vw, 1280px);
+  height: clamp(1px, 50vw, 640px);
+  margin:  200px auto;
+}
+
+#bonsai2 {
+  width: clamp(1px, 100vw, 1280px);
+  height: clamp(1px, 56.25vw, 720px);
+  margin:  200px auto;
+}
+
+.main-content {
+  background-color: white !important;
+}
+
+.vids {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

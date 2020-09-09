@@ -1,0 +1,18 @@
+#sketch {
+  margin: 0;
+  padding: 0;
+  width: min(100vw, 1280px);
+  height: min(100vh, 720px);
+  box-shadow: 4px 10px 20px 2px #020202aa;
+}
+
+.wrapper {
+  overflow-y: hidden;
+
+}
+
+.instructions {
+  text-align: center;
+  margin-bottom: 50px;
+  
+}

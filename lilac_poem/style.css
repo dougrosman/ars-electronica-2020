@@ -1,0 +1,9 @@
+.gallery img {
+    /* width: unset; */
+    width: min(100%, 500px);
+  }
+
+  .vid {
+      width: min(100%, 500px);
+      margin-bottom: 100px;
+  }

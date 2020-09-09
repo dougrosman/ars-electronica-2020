@@ -1,0 +1,46 @@
+.preview-img {
+  position: relative;
+  width: 100%;
+  max-width: 828px;
+  max-height: 602px;
+}
+
+.preview-img img {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 22%;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: max-content;
+  max-width: 1280px;
+}
+
+.img-overlay p {
+  font-size: clamp(11px, 3vw, 18px);
+  color: #020202;
+  margin: clamp(3px, 3vw, 25px);
+  width: 25%;
+}
+
+.begin {
+  font-size: clamp(14px, 3vw, 24px);
+  color: red;
+}
+
+#controls {
+  font-size: clamp(9px, 3vw, 14px);
+}
+
+.img-overlay a {
+  color: #020202;
+}
+
+.img-overlay a:hover {
+  color: salmon;
+  cursor: pointer;
+}

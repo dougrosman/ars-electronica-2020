@@ -1,0 +1,4 @@
+.gal-img:first-child {
+  margin-bottom: clamp(100px, 30vh, 600px);
+}
+

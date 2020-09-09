@@ -1,0 +1,48 @@
+.preview-vid {
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  max-height: 720px;
+}
+
+.preview-vid video {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.video-overlay p {
+  font-size: clamp(11px, 3vw, 18px);
+  color: #020202;
+  margin: clamp(3px, 3vw, 25px);
+  width: 60%;
+}
+
+.begin {
+  font-size: clamp(14px, 3vw, 24px);
+  color: red;
+}
+
+#controls {
+  font-size: clamp(9px, 3vw, 14px);
+}
+
+.video-overlay a {
+  color: #020202;
+}
+
+.video-overlay a:hover {
+  color: salmon;
+  cursor: pointer;
+}
+
+.gallery {
+  margin-top: 10vh;
+}

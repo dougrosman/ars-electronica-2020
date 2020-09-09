@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+     <!-- Babylon.js -->
+     <script src="https://code.jquery.com/pep/0.4.2/pep.min.js"></script>
+     <script src="https://playground.babylonjs.com/js/libs/split.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+     <script src="https://preview.babylonjs.com/gltf_validator.js"></script>
+     <script src="https://preview.babylonjs.com/earcut.min.js"></script>
+     <script src="https://preview.babylonjs.com/babylon.js"></script>
+     <script src="https://preview.babylonjs.com/inspector/babylon.inspector.bundle.js"></script>
+     <script src="https://preview.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+     <script src="https://preview.babylonjs.com/proceduralTexturesLibrary/babylonjs.proceduralTextures.min.js"></script>
+     <script src="https://preview.babylonjs.com/postProcessesLibrary/babylonjs.postProcess.min.js"></script>
+     <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.js"></script>
+     <script src="https://preview.babylonjs.com/serializers/babylonjs.serializers.min.js"></script>
+     <!-- <script src="https://preview.babylonjs.com/gui/babylon.gui.min.js"></script> -->
+
+
+     <!-- <script type="text/javascript" src="js/MainManager.js"></script>
+     <script type="text/javascript" src="js/roomScene.js"></script>
+     <script type="text/javascript" src="js/GameManger.js"></script> -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+     <link href="./js/styles.css" rel="stylesheet">
+
+     <style>
+        html, body {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face { 
+            font-family: 'Ethnocentric';
+            src: url('./GE_SS_Unique_Light.otf') format('truetype');
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+        <!-- <button data-modal-target="#modal">Open Modal</button> -->
+        <div id ="l-holder" class="loading-container">
+            <h2 id = "l-title" class="progress-id" >Loading Game Assets</h2>
+            <div class="progress">
+                <div id="l-bar" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                </div>
+            </div>
+            <h4  id="l-value" class="progress-value" >50 %</h4>
+        </div>
+
+        <canvas id="renderCanvas"></canvas>
+        <script type="module" >
+            import {GameManager} from './js/GameManger.js';
+            document.addEventListener("DOMContentLoaded", function () {
+                if (BABYLON.Engine.isSupported()) {
+                    let game = new GameManager("renderCanvas");
+                }
+            });
+        </script>
+
+
+</body>
+</html>

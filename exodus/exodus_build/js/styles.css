@@ -1,0 +1,146 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.modall {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modall.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modall-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modall-header .titlee {
+  font-size: 2.25rem;
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+}
+
+.modall-header .closee-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem  !important;
+  font-weight: bold !important;
+}
+
+.modall-body {
+  padding: 10px 15px;
+  height:155px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+  /* Blue */
+  .info {
+    border-color: #2196F3;
+    color: dodgerblue;
+    margin: 30px 90px;
+    width: 90px;
+    height: 47px;
+  }
+
+  .info:hover {
+    background: #2196F3;
+    color: white;
+  }
+
+  /* Red */
+  .danger {
+    border-color: #f44336;
+    color: red;
+    margin: 15px 15px;
+    width: 90px;
+    height: 47px;
+  }
+  .danger:hover {
+    background: #f44336;
+    color: white;
+  }
+
+  .textInfoo {
+    text-align: center;
+    font-family: "Font Awesome 5 Free";
+    font-size: 23px;
+  }
+
+  .loading-container {
+    height: 100%;
+    position: fixed;
+    /* background: #00000059; */
+    background: black;
+    width: 100%;
+    }
+
+
+
+  .progress-id{
+    margin-top: 45vh;
+    margin-left: 41%;
+    font-family: "Font Awesome 5 Free";
+    color: white;
+  }
+
+  .progress {
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 1%;
+    margin-bottom: 10px;
+    border: 1.5px solid #fff;
+    border-radius:10px;
+    background: black;
+
+
+  }
+
+  .progress-value {
+    margin-left: 40%;
+    margin-top: 11px !important;
+    font-size: 35px;
+    font-family: "Font Awesome 5 Free";
+    color: white;
+  }
+

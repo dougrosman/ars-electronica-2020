@@ -1,0 +1,16 @@
+.vimeo-embed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1440px;
+  max-height: 1280px;
+}
+
+html {  
+  background-color: white;
+}
+
+body {
+  background-color: white;
+}
