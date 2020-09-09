@@ -303,6 +303,10 @@ and (max-width: 714px) {
     padding: 8px;
 }
 
+.dis-suffix {
+    margin-left: 3px;
+}
+
 .dis-dis:hover {
     cursor: none;
 }
