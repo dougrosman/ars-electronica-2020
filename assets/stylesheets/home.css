@@ -235,9 +235,9 @@ a:hover {
     padding: 9px;
     padding-right: 0px;
     
-    font-size: clamp(16px, 2.25vw, 22px);
-    width: clamp(1px, 75vw, 775px);
-    line-height: clamp(14px, 3vw, 34px);
+    font-size: clamp(11px, 2.25vw, 22px);
+    width: clamp(1px, 74vw, 775px);
+    line-height: clamp(17px, 3vw, 34px);
 }
 
 .branding {
@@ -379,13 +379,14 @@ and (max-device-width: 800px)
 and (-webkit-min-device-pixel-ratio: 2) {
 
     #ats {
-        margin-bottom: 60px;
+        margin-bottom: 0px;
+        padding-bottom: 80px;
     }
     #ats3 {
         transform: scaleY(1);
         font-size: 10px;
-        width: 97
-        padding-right 2px;
+        width: 88vw;
+        padding-right: 2px;
     }
 
     .group-title {
