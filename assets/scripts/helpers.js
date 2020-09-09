@@ -40,10 +40,11 @@ $(document).ready(function(){
             scrollToContent(s);
         })
         let workTitle = ($('title')[0].text);
-        let noScrollAnimate = "Anne Wilson, with Shawn Decker, Cat Solen, Daniel Torrente"
+        let noScrollAnimate = "Anne Wilson, with Shawn Decker, Cat Solen, Daniel Torrente";
+        let noScrollAnimate2 = "Anaïs Morales";
         let ready = true;
         $(window).on('wheel', function(){
-            if(ready && workTitle != noScrollAnimate){ready=false; scrollToContent(s/1.25); }
+            if(ready && workTitle != noScrollAnimate && workTitle != noScrollAnimate2){ready=false; scrollToContent(s/1.25); }
         })
     }
 

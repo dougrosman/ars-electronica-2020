@@ -4,28 +4,44 @@
   width: min(100vw, 1280px);
   height: min(100vh, 720px);
   box-shadow: 4px 10px 20px 2px #020202aa;
+  
 }
 
 .wrapper {
   overflow-y: hidden;
+}
 
+.main-content {
+  overflow-x: hidden;
 }
 
 .instructions {
   text-align: center;
-  margin-bottom: 50px;
-  
+  position: fixed;
+  top: 10%;
+  background-color: #fdfdfdbb;
+  padding: 20px;
+  transform: translateY(-50%);
+}
+
+.instructions p {
+  margin: 8px;
 }
 
 .safari-warning-text {
   text-align: center !important;
   color: #020202 !important;
+  padding: 100px 0;
 }
 
-.desktop-ff-ch {
-  text-align: center;
-}
 
 .browser-check {
   background-color:#fdfdfd !important;
+}
+
+@media only screen  
+and (max-height: 1120px) {
+  .instructions {
+    top: 50%;
+  }
 }

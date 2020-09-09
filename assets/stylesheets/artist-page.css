@@ -267,6 +267,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
     transform: unset;
   }
 
+  .header-titles {
+    width: min(103%, 800px);
+  }
+
 }
 
 /************* HELPERS ************/
