@@ -212,9 +212,9 @@ a:hover{
 }
 
 .sidebar-title { font-size: 2.25em; }
-.sidebar-name { font-size: 1.35em; }
-.sidebar-year { font-size: 1.25em; }
-.sidebar-medium { font-size: 1.25em; margin-bottom: 50px; }
+.sidebar-name { font-size: 1.65em; }
+.sidebar-year { font-size: 1.15em; }
+.sidebar-medium { font-size: 1.15em; margin-bottom: 50px; }
 
 .sidebar-description {
   font-size: 1.175em;
@@ -225,6 +225,16 @@ a:hover{
 .sidebar-statement {
   margin-top: 20px;
   font-size: 1.175em;
+}
+
+.sidebar-socials {
+
+  margin-top: 20px;
+  font-size: .9em;
+}
+
+.sidebar-socials-links {
+  text-decoration: none;
 }
 
 /********** MAIN CONTENT ***********/

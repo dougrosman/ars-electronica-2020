@@ -98,6 +98,42 @@ $(document).ready(function(){
             $(".sidebar-linebreak").after(statement);
         }
 
+        let socials = _artist.social;
+
+        let socialString = "";
+
+        for(let i = 0; i < socials.length; i++) {
+            let platform = Object.keys(socials[i])[0];
+           
+
+            if(platform === "website") {
+                let site = socials[i].website;
+                
+                let siteLink = `<a class="sidebar-socials-links" href="${site}" target="_blank">Website</a>`;
+                socialString += `[${siteLink}]`
+            }
+
+            if(platform === "instagram") {
+                let ig = socials[i].instagram;
+                let igLink = `<a class="sidebar-socials-links" href="https://www.instagram.com/${ig}" target="_blank">Instagram</a>`;
+                socialString += ` [${igLink}]`
+            }
+
+            if(platform === "facebook") {
+                let fb = socials[i].facebook;
+                let fbLink = `<a class="sidebar-socials-links" href="https://www.facebook.com/${fb}" target="_blank">Facebook</a>`;
+                socialString += ` [${fbLink}]`
+            }
+
+            if(platform === "Vimeo") {
+                let vimeo = socials[i].Vimeo;
+                let vimeoLink = `<a class="sidebar-socials-links" href="${vimeo}" target="_blank">Vimeo</a>`;
+                socialString += ` [${vimeoLink}]`
+            }
+
+        }
+        $(".sidebar-statement").after(`<div class="sidebar-socials">${socialString}</div>`);
+
         $('.sidebar-content').append(footer);
     }
 });
