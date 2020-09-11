@@ -40,3 +40,8 @@
   object-fit: contain;
   box-shadow: 0px 12px 15px -8px var(--white-dark-alpha);
 }
+
+.wiki {
+  width: 100%;
+  max-width: 1280px;
+}
