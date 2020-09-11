@@ -1,10 +1,8 @@
 $(document).ready(function(){
 
-  $('.popout').on('click', function(){
-    
-    openPopout();
-
-  })
+  $('.popout').on('click', function(){ openPopout();})
+  $('.preview-image').on('click', function(){ openPopout();})
+  $('.popout-overlay').on('click', function(){ openPopout();})
 
   function openPopout(){
 
