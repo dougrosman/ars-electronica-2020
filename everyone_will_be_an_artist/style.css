@@ -21,6 +21,7 @@
 .preview-image {
   width: min(100vw, 1460px);
   max-height: 100vh;
+  object-fit: contain;
 }
 
 .popout-overlay {
