@@ -19,8 +19,9 @@
 }
 
 .preview-image {
-  width: min(90vw, 1460px);
-  max-height: 100vh;
+  /* width: min(90vw, 1460px); */
+  width: clamp(1px, 90vw, 1886px);
+  height: clamp(1px, 59.74vw, 1252px);
 }
 
 .popout-overlay {
@@ -46,6 +47,10 @@
 .popout-overlay:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+.popout-overlay p {
+  font-weight: 500;
 }
 
 @media only screen 
