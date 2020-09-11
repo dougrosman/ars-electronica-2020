@@ -19,9 +19,8 @@
 }
 
 .preview-image {
-  width: min(100vw, 1460px);
-  max-height: 100vh;
-  object-fit: contain;
+  width: clamp(1px, 100vw, 1280px);
+  height: clamp(1px, 76.27vw, 100vh);
 }
 
 .popout-overlay {
@@ -34,8 +33,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--black-light);
-  color: var(--white-dark);
+  background-color: var(--black-light-alpha);
+  color: var(--black-light);
   opacity: 0;
   transition: opacity .25s;
 }
@@ -45,8 +44,14 @@
 }
 
 .popout-overlay:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   cursor: pointer;
+}
+
+.rendered {
+  font-size: 20px;
+  background-color: #020202;
+  padding: 7px;
 }
 
 @media only screen 
@@ -60,7 +65,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 110%;
+    top: 115%;
     left: 0;
     width: 100%;
     height: 5%;
@@ -71,6 +76,16 @@ and (-webkit-min-device-pixel-ratio: 2) {
     font-size: 14px;
   }
   
+  .rendered {
+    font-size: 16px;
+    width: 80%;
+    background-color: unset;
+    color: unset;
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 16px !important;
+  }
+
   .popout-overlay:hover {
     opacity: unset;
     cursor: pointer;
