@@ -181,7 +181,7 @@ $(document).ready(function(){
         let judd = `
                         <p class="work-link-text">
                             <a class="work-link" href='../the_tenders'>The Tenders: Embrasures in the Fort’s Collapse</a>
-                            <span class="artist-name">Judd Morrissey & Mark Jeffrey (ATOM-r), and Abraham Avnisan</span>
+                            <span class="artist-name">Judd Morrissey & Mark Jeffrey (ATOM-r), and Ava Aviva Avnisan</span>
                         </p>
         `
         let julia = `

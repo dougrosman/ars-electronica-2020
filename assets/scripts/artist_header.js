@@ -136,14 +136,14 @@ $(document).ready(function(){
 
         $('.sidebar-content').append(footer);
         
-        if(_artist.name == "Judd Morrissey & Mark Jeffrey (ATOM-r), and Abraham Avnisan") {
-            let abeStatement = `Abraham Avnisan is an interdisciplinary artist whose work is situated at the intersection of image, text and code. Using a host of emerging technologies including 3D scanning, augmented reality and virtual reality, he creates applications for mobile devices, interactive installations and technologically mediated performances that seek to subvert dominant narratives through embodied encounters with language. Abraham is an Assistant Professor of Emerging Media & Technology and Journalism & Mass Communication at Kent State University.`
-            let abeSidebarStatement = `<p class="sidebar-statement">${abeStatement}</p>`
+        if(_artist.name == "Judd Morrissey & Mark Jeffrey (ATOM-r), and Ava Aviva Avnisan") {
+            let avivaStatement = `Ava Aviva Avnisan is an interdisciplinary artist whose work is situated at the intersection of image, text and code. Using a host of emerging technologies including 3D scanning, augmented reality and virtual reality, he creates applications for mobile devices, interactive installations and technologically mediated performances that seek to subvert dominant narratives through embodied encounters with language.`
+            let avivaSidebarStatement = `<p class="sidebar-statement">${avivaStatement}</p>`
 
-            let abeSocials = `<a class="sidebar-socials-links" href="https://abrahamavnisan.com" target="_blank">Website</a>`
+            let avivaSocials = `<a class="sidebar-socials-links" href="https://avivaavnisan.com/" target="_blank">Website</a>`
 
-            $(".sidebar-socials").last().after(`<div class="sidebar-statement">${abeSidebarStatement}</div>`);
-            $(".sidebar-statement").last().after(`<div class="sidebar-socials">[${abeSocials}]</div>`);
+            $(".sidebar-socials").last().after(`<div class="sidebar-statement">${avivaSidebarStatement}</div>`);
+            $(".sidebar-statement").last().after(`<div class="sidebar-socials">[${avivaSocials}]</div>`);
         }
     }
 });
