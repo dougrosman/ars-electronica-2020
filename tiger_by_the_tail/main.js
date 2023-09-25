@@ -19,7 +19,7 @@ function openPopout(){
   console.log(h);
 
 
-  let url = "https://tiger-by-the-tail-sequence.herokuapp.com/"
+  let url = "https://tiger.kristinmcwharter.com"
 
   let options = `
   width=${window.innerWidth},
